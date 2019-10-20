@@ -36,8 +36,8 @@ namespace grape
             textOutput.Text = cn.ar[index].content;
             edgeDepen eD = new edgeDepen(textOutput.Text);
             List<custSent> tempList = eD.makeCustSents();
-            //BingImageSearch bing = new BingImageSearch();
-            //pictureBox1.Image = bing.rtnImagies("lion");
+            BingImageSearch bing = new BingImageSearch();
+            pictureBox1.Image = bing.rtnImagies("lion");
         }
 
         private void timer1_Tick(object sender, EventArgs e)

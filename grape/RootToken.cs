@@ -11,7 +11,7 @@ namespace grape
     class RootToken
     {
         public string root;
-        public List<String> nouns;
+        public List<string> nouns = new List<string>();
 
         public RootToken(string _root)
         {
