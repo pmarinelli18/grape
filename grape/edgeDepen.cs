@@ -14,10 +14,6 @@ namespace grape
         public AnnotateTextResponse response;
         List<custSent> sentenceList;
 
-        //public int rootIndex;
-        //public RootToken root;
-
-
         public edgeDepen(string info)
         {
             resultObj = new resultsAuth();
@@ -26,6 +22,7 @@ namespace grape
         
         public List<custSent> makeCustSents()
         {
+            sentenceList = new List<custSent>();
             foreach (var sentence in response.Sentences)
             {
                 custSent sent = new custSent(sentence.Text.Content.ToString());

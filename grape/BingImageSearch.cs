@@ -13,7 +13,6 @@ namespace grape
 {
     class BingImageSearch
     {                                                             
-        private Images imageResults = null;
         private ImageSearchClient client;
 
         public BingImageSearch()
