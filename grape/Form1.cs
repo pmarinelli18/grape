@@ -26,5 +26,35 @@ namespace grape
         {
 
         }
+
+        private void website_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void websiteEnter_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string check = website.Text;
+                if (website.Text[0] == 'h')
+                {
+                    website.Text.Substring(8);
+                }
+                else if (website.Text.Substring(0,12) == "www.cnn.com/")
+                {
+
+                }
+                else
+                {
+                    errorMessage.Text = "At the moment we only accept CNN Articles";
+                }
+            }
+            catch(Exception ex)
+            {
+                errorMessage.Text = "At the moment we only accept CNN Articles";
+            }
+            
+        }
     }
 }

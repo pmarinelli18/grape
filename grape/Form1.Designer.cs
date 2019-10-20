@@ -38,6 +38,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.errorMessage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -48,7 +49,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(42, 443);
+            this.pictureBox1.Location = new System.Drawing.Point(42, 452);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(291, 275);
             this.pictureBox1.TabIndex = 0;
@@ -70,6 +71,7 @@
             this.website.Name = "website";
             this.website.Size = new System.Drawing.Size(238, 38);
             this.website.TabIndex = 2;
+            this.website.TextChanged += new System.EventHandler(this.website_TextChanged);
             // 
             // websiteLabel
             // 
@@ -88,10 +90,11 @@
             this.websiteEnter.TabIndex = 4;
             this.websiteEnter.Text = "Enter";
             this.websiteEnter.UseVisualStyleBackColor = true;
+            this.websiteEnter.Click += new System.EventHandler(this.websiteEnter_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(376, 443);
+            this.pictureBox2.Location = new System.Drawing.Point(373, 452);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(291, 275);
             this.pictureBox2.TabIndex = 5;
@@ -99,7 +102,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(709, 443);
+            this.pictureBox3.Location = new System.Drawing.Point(707, 452);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(291, 275);
             this.pictureBox3.TabIndex = 6;
@@ -129,11 +132,21 @@
             this.pictureBox6.TabIndex = 9;
             this.pictureBox6.TabStop = false;
             // 
+            // errorMessage
+            // 
+            this.errorMessage.AutoSize = true;
+            this.errorMessage.ForeColor = System.Drawing.Color.Red;
+            this.errorMessage.Location = new System.Drawing.Point(487, 34);
+            this.errorMessage.Name = "errorMessage";
+            this.errorMessage.Size = new System.Drawing.Size(0, 32);
+            this.errorMessage.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2404, 842);
+            this.Controls.Add(this.errorMessage);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -169,6 +182,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label errorMessage;
     }
 }
 
