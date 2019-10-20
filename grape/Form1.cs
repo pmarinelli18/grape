@@ -37,7 +37,25 @@ namespace grape
             edgeDepen eD = new edgeDepen(textOutput.Text);
             List<custSent> tempList = eD.makeCustSents();
             BingImageSearch bing = new BingImageSearch();
-            bing.rtnImagies("In the jungle the lion sleeps tonight");
+            
+            tempList[0].findRoot();
+            pictureBox1.Image = bing.rtnImagies(tempList[0].sentRoot.root);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+
+            pictureBox2.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[0]);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+
+            pictureBox3.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[1]);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+
+            pictureBox4.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[2]);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+
+            pictureBox5.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[3]);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+
+            pictureBox6.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[3]);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
 
         }
 
