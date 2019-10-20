@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textOutput = new System.Windows.Forms.RichTextBox();
             this.website = new System.Windows.Forms.TextBox();
@@ -39,6 +40,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.errorMessage = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -60,7 +62,7 @@
             // 
             this.textOutput.Location = new System.Drawing.Point(184, 234);
             this.textOutput.Name = "textOutput";
-            this.textOutput.Size = new System.Drawing.Size(396, 96);
+            this.textOutput.Size = new System.Drawing.Size(889, 171);
             this.textOutput.TabIndex = 1;
             this.textOutput.Text = "";
             this.textOutput.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -183,6 +185,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label errorMessage;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
