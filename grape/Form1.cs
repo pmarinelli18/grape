@@ -35,7 +35,9 @@ namespace grape
             int index = website.SelectedIndex;
             textOutput.Text = cn.ar[index].content;
             edgeDepen eD = new edgeDepen(textOutput.Text);
-            //List<custSent> tempList = new List<custSent>();
+            List<custSent> tempList = eD.makeCustSents();
+            BingImageSearch bing = new BingImageSearch();
+            bing.rtnImagies("In the jungle the lion sleeps tonight");
 
         }
 
