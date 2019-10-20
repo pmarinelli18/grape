@@ -8,11 +8,11 @@ using static Google.Cloud.Language.V1.AnnotateTextRequest.Types;
 
 namespace grape
 {
-    class custSent
+    public class custSent
     {
         public resultsAuth sentAuth;
         public AnnotateTextResponse sentResponse;
-
+        
         public RootToken sentRoot;
         public int rootIndex;
 

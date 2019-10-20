@@ -8,7 +8,7 @@ using static Google.Cloud.Language.V1.AnnotateTextRequest.Types;
 
 namespace grape
 {
-    class resultsAuth
+    public class resultsAuth
     {
         public resultsAuth()
         {
