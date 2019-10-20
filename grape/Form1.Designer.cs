@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textOutput = new System.Windows.Forms.RichTextBox();
-            this.website = new System.Windows.Forms.TextBox();
             this.websiteLabel = new System.Windows.Forms.Label();
             this.websiteEnter = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -39,6 +39,8 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.errorMessage = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.website = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -65,14 +67,6 @@
             this.textOutput.TabIndex = 1;
             this.textOutput.Text = "";
             this.textOutput.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
-            // website
-            // 
-            this.website.Location = new System.Drawing.Point(184, 84);
-            this.website.Name = "website";
-            this.website.Size = new System.Drawing.Size(238, 38);
-            this.website.TabIndex = 2;
-            this.website.TextChanged += new System.EventHandler(this.website_TextChanged);
             // 
             // websiteLabel
             // 
@@ -147,11 +141,25 @@
             this.errorMessage.Size = new System.Drawing.Size(0, 32);
             this.errorMessage.TabIndex = 10;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 4500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // website
+            // 
+            this.website.FormattingEnabled = true;
+            this.website.Location = new System.Drawing.Point(184, 69);
+            this.website.Name = "website";
+            this.website.Size = new System.Drawing.Size(291, 39);
+            this.website.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2404, 842);
+            this.ClientSize = new System.Drawing.Size(2495, 842);
+            this.Controls.Add(this.website);
             this.Controls.Add(this.errorMessage);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -160,7 +168,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.websiteEnter);
             this.Controls.Add(this.websiteLabel);
-            this.Controls.Add(this.website);
             this.Controls.Add(this.textOutput);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
@@ -180,7 +187,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RichTextBox textOutput;
-        private System.Windows.Forms.TextBox website;
         private System.Windows.Forms.Label websiteLabel;
         private System.Windows.Forms.Button websiteEnter;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -189,6 +195,8 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label errorMessage;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ComboBox website;
     }
 }
 
