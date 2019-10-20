@@ -200,12 +200,12 @@
             this.title.AutoSize = true;
             this.title.Font = new System.Drawing.Font("Impact", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.title.ForeColor = System.Drawing.Color.DimGray;
-            this.title.Location = new System.Drawing.Point(247, 5);
+            this.title.Location = new System.Drawing.Point(329, 5);
             this.title.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(254, 34);
+            this.title.Size = new System.Drawing.Size(140, 34);
             this.title.TabIndex = 53;
-            this.title.Text = "Twitter Tweet Tracker";
+            this.title.Text = "LEND AN EYE";
             // 
             // Form1
             // 
