@@ -10,12 +10,14 @@ namespace grape
 {
     class RootToken
     {
+        bool containRoot = false;
         public string root;
         public List<string> nouns = new List<string>();
 
         public RootToken(string _root)
         {
             root = _root;
+            containRoot = true;
         }
     }
 }

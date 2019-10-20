@@ -28,7 +28,7 @@ namespace grape
         public Image rtnImagies(String searchTerm)
         {
             Random rnd = new Random();
-            var a = client.Images.SearchAsync(query: searchTerm).Result.Value.ElementAt(rnd.Next(1,20));
+            var a = client.Images.SearchAsync(query: searchTerm).Result.Value.ElementAt(rnd.Next(1,10));
 
             WebClient wc = new WebClient();
             byte[] bytes = wc.DownloadData(a.ThumbnailUrl);

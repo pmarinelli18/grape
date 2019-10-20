@@ -37,26 +37,62 @@ namespace grape
             edgeDepen eD = new edgeDepen(textOutput.Text);
             List<custSent> tempList = eD.makeCustSents();
             BingImageSearch bing = new BingImageSearch();
-            
             tempList[0].findRoot();
-            pictureBox1.Image = bing.rtnImagies(tempList[0].sentRoot.root);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
 
-            pictureBox2.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[0]);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-
-            pictureBox3.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[1]);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-
-            pictureBox4.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[2]);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-
-            pictureBox5.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[3]);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-
-            pictureBox6.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[3]);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-
+            if (tempList[0].containsRoot == true)
+            {
+                pictureBox1.Image = bing.rtnImagies(tempList[0].sentRoot.root);
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            else
+            {
+                pictureBox1.Image = null;
+            }
+            if (tempList[0].sentRoot.nouns.Count > 1)
+            {
+                pictureBox2.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[0]);
+                pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            else
+            {
+                pictureBox2.Image = null;
+            }
+            if (tempList[0].sentRoot.nouns.Count > 2)
+            {
+                pictureBox3.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[1]);
+                pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            else
+            {
+                pictureBox3.Image = null;
+            }
+            if (tempList[0].sentRoot.nouns.Count > 3)
+            {
+                pictureBox4.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[2]);
+                pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            else
+            {
+                pictureBox4.Image = null;
+            }
+            if (tempList[0].sentRoot.nouns.Count > 4)
+            {
+                pictureBox5.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[3]);
+                pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            else
+            {
+                pictureBox5.Image = null;
+            }
+            if (tempList[0].sentRoot.nouns.Count > 5)
+            {
+                pictureBox6.Image = bing.rtnImagies(tempList[0].sentRoot.nouns[3]);
+                pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            else
+            {
+                pictureBox6.Image = null;
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)

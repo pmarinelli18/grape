@@ -16,6 +16,8 @@ namespace grape
         public RootToken sentRoot;
         public int rootIndex;
 
+        public bool containsRoot = false;
+
         public custSent(string _sentence)
         {
             sentAuth = new resultsAuth();
@@ -30,14 +32,27 @@ namespace grape
                 {
                     sentRoot = new RootToken(item.Text.Content.ToString());
                     rootIndex = item.DependencyEdge.HeadTokenIndex;
+                    containsRoot = true;
                     break;
                 }
             }
 
+            bool properNoun = true;
+
             foreach (var item in sentResponse.Tokens)
             {
-                if (item.DependencyEdge.HeadTokenIndex == rootIndex)
+                if (item.DependencyEdge.HeadTokenIndex == rootIndex &&
+                     !item.Text.Content.Equals(",") &&
+                     !item.Text.Content.Equals(".") &&
+                     !item.Text.Content.Equals("!") &&
+                     !item.Text.Content.Equals("?") ||
+                     (item.PartOfSpeech.Proper == PartOfSpeech.Types.Proper.Proper) &&
+                      properNoun == true)  
                 {
+                    if (item.PartOfSpeech.Proper == PartOfSpeech.Types.Proper.Proper)
+                    {
+                        properNoun = false;
+                    }
                     sentRoot.nouns.Add(item.Text.Content.ToString());
                 }
             }
