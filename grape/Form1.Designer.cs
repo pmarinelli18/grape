@@ -49,6 +49,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox1.Location = new System.Drawing.Point(42, 452);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(291, 275);
@@ -60,7 +61,7 @@
             // 
             this.textOutput.Location = new System.Drawing.Point(184, 234);
             this.textOutput.Name = "textOutput";
-            this.textOutput.Size = new System.Drawing.Size(396, 96);
+            this.textOutput.Size = new System.Drawing.Size(1425, 160);
             this.textOutput.TabIndex = 1;
             this.textOutput.Text = "";
             this.textOutput.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -94,6 +95,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox2.Location = new System.Drawing.Point(373, 452);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(291, 275);
@@ -102,6 +104,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox3.Location = new System.Drawing.Point(707, 452);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(291, 275);
@@ -110,6 +113,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox4.Location = new System.Drawing.Point(1042, 452);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(291, 275);
@@ -118,6 +122,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox5.Location = new System.Drawing.Point(1376, 452);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(291, 275);
@@ -126,6 +131,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox6.Location = new System.Drawing.Point(1697, 452);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(291, 275);

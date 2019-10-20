@@ -19,7 +19,7 @@ namespace grape
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -39,11 +39,11 @@ namespace grape
                 string check = website.Text;
                 if (website.Text[0] == 'h')
                 {
-                    website.Text.Substring(8);
+                    check = check.Substring(8);
                 }
-                else if (website.Text.Substring(0,12) == "www.cnn.com/")
+                if (check.Substring(0,12) == "www.cnn.com/")
                 {
-
+                    textOutput.Text = "As US President Donald Trump hailed the agreement his administration negotiated with the Turks for northern Syria as ";
                 }
                 else
                 {
