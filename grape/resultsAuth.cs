@@ -10,9 +10,12 @@ namespace grape
 {
     class resultsAuth
     {
-        public AnnotateTextResponse AnalyzeSyntaxFromText(string info)
+        public resultsAuth()
         {
 
+        }
+        public AnnotateTextResponse AnalyzeSyntaxFromText(string info)
+        {
             var client = new LanguageServiceClientBuilder();
             client.CredentialsPath = ("creds.json");
 
