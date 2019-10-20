@@ -149,6 +149,9 @@
             // website
             // 
             this.website.FormattingEnabled = true;
+            this.website.Items.AddRange(new object[] {
+            "https://www.cnn.com/2019/10/20/middleeast/putin-now-owns-this-mess-intl/index.htm" +
+                "l"});
             this.website.Location = new System.Drawing.Point(184, 69);
             this.website.Name = "website";
             this.website.Size = new System.Drawing.Size(291, 39);

@@ -36,7 +36,7 @@ namespace grape
         {
             try
             {
-                string check = website.Text;
+                string check = website.GetItemText("https://www.cnn.com/2019/10/20/middleeast/putin-now-owns-this-mess-intl/index.html");
                 if (website.Text[0] == 'h')
                 {
                     check = check.Substring(8);
@@ -48,7 +48,7 @@ namespace grape
                     edgeDepen eD = new edgeDepen(textOutput.Text);
                     eD.findRoot();
                     BingImageSearch Bing = new BingImageSearch();
-                    pictureBox1.Image = Bing.rtnImagies("");
+                    pictureBox1.Image = Bing.rtnImagies(eD.root.root);
                     pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
                 }
                 else
