@@ -76,9 +76,9 @@
             this.websiteLabel.Location = new System.Drawing.Point(89, 18);
             this.websiteLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.websiteLabel.Name = "websiteLabel";
-            this.websiteLabel.Size = new System.Drawing.Size(92, 17);
+            this.websiteLabel.Size = new System.Drawing.Size(154, 17);
             this.websiteLabel.TabIndex = 3;
-            this.websiteLabel.Text = "CNN Website";
+            this.websiteLabel.Text = "Top News For The Day";
             // 
             // websiteEnter
             // 
