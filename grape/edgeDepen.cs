@@ -10,11 +10,11 @@ namespace grape
 {
     class edgeDepen
     {
-        resultsAuth resultObj;
-        AnnotateTextResponse response;
-        int rootIndex;
+        public resultsAuth resultObj;
+        public AnnotateTextResponse response;
+        public int rootIndex;
 
-        RootToken root;
+        public RootToken root;
 
         public edgeDepen(string info)
         {
