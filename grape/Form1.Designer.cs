@@ -44,6 +44,7 @@
             this.website = new System.Windows.Forms.ComboBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.title = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -58,7 +59,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox1.Location = new System.Drawing.Point(16, 189);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(110, 115);
             this.pictureBox1.TabIndex = 0;
@@ -68,7 +69,7 @@
             // textOutput
             // 
             this.textOutput.Location = new System.Drawing.Point(42, 100);
-            this.textOutput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textOutput.Margin = new System.Windows.Forms.Padding(2);
             this.textOutput.Name = "textOutput";
             this.textOutput.Size = new System.Drawing.Size(536, 70);
             this.textOutput.TabIndex = 1;
@@ -78,7 +79,7 @@
             // websiteLabel
             // 
             this.websiteLabel.AutoSize = true;
-            this.websiteLabel.Location = new System.Drawing.Point(40, 17);
+            this.websiteLabel.Location = new System.Drawing.Point(40, 32);
             this.websiteLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.websiteLabel.Name = "websiteLabel";
             this.websiteLabel.Size = new System.Drawing.Size(118, 13);
@@ -87,8 +88,8 @@
             // 
             // websiteEnter
             // 
-            this.websiteEnter.Location = new System.Drawing.Point(42, 61);
-            this.websiteEnter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.websiteEnter.Location = new System.Drawing.Point(42, 76);
+            this.websiteEnter.Margin = new System.Windows.Forms.Padding(2);
             this.websiteEnter.Name = "websiteEnter";
             this.websiteEnter.Size = new System.Drawing.Size(56, 20);
             this.websiteEnter.TabIndex = 4;
@@ -100,7 +101,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox2.Location = new System.Drawing.Point(140, 189);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(110, 115);
             this.pictureBox2.TabIndex = 5;
@@ -110,7 +111,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox3.Location = new System.Drawing.Point(266, 189);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(110, 115);
             this.pictureBox3.TabIndex = 6;
@@ -120,7 +121,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox4.Location = new System.Drawing.Point(391, 189);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(110, 115);
             this.pictureBox4.TabIndex = 7;
@@ -130,7 +131,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox5.Location = new System.Drawing.Point(516, 189);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(110, 115);
             this.pictureBox5.TabIndex = 8;
@@ -140,7 +141,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox6.Location = new System.Drawing.Point(636, 189);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(110, 115);
             this.pictureBox6.TabIndex = 9;
@@ -150,7 +151,7 @@
             // 
             this.errorMessage.AutoSize = true;
             this.errorMessage.ForeColor = System.Drawing.Color.Red;
-            this.errorMessage.Location = new System.Drawing.Point(156, 17);
+            this.errorMessage.Location = new System.Drawing.Point(156, 32);
             this.errorMessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.errorMessage.Name = "errorMessage";
             this.errorMessage.Size = new System.Drawing.Size(0, 13);
@@ -164,8 +165,8 @@
             // website
             // 
             this.website.FormattingEnabled = true;
-            this.website.Location = new System.Drawing.Point(42, 31);
-            this.website.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.website.Location = new System.Drawing.Point(42, 46);
+            this.website.Margin = new System.Windows.Forms.Padding(2);
             this.website.Name = "website";
             this.website.Size = new System.Drawing.Size(536, 21);
             this.website.TabIndex = 11;
@@ -174,8 +175,8 @@
             // 
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox7.Location = new System.Drawing.Point(638, 5);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Location = new System.Drawing.Point(665, 5);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(54, 28);
             this.pictureBox7.TabIndex = 18;
@@ -186,13 +187,25 @@
             // 
             this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox8.Location = new System.Drawing.Point(692, 5);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Location = new System.Drawing.Point(719, 5);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(54, 28);
             this.pictureBox8.TabIndex = 17;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click_1);
+            // 
+            // title
+            // 
+            this.title.AutoSize = true;
+            this.title.Font = new System.Drawing.Font("Impact", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.ForeColor = System.Drawing.Color.DimGray;
+            this.title.Location = new System.Drawing.Point(247, 5);
+            this.title.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(254, 34);
+            this.title.TabIndex = 53;
+            this.title.Text = "Twitter Tweet Tracker";
             // 
             // Form1
             // 
@@ -200,6 +213,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(790, 346);
+            this.Controls.Add(this.title);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.website);
@@ -214,7 +228,7 @@
             this.Controls.Add(this.textOutput);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -248,6 +262,7 @@
         private System.Windows.Forms.ComboBox website;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label title;
     }
 }
 
