@@ -12,35 +12,26 @@ namespace grape
     {
         public resultsAuth resultObj;
         public AnnotateTextResponse response;
-        public int rootIndex;
+        List<custSent> sentenceList;
 
-        public RootToken root;
+        //public int rootIndex;
+        //public RootToken root;
+
 
         public edgeDepen(string info)
         {
             resultObj = new resultsAuth();
             response = resultObj.AnalyzeSyntaxFromText(info);
         }
-
-        public void findRoot()
+        
+        public List<custSent> makeCustSents()
         {
-            foreach (var item in response.Tokens)
+            foreach (var sentence in response.Sentences)
             {
-                if (item.DependencyEdge.Label == DependencyEdge.Types.Label.Root)
-                {
-                    root = new RootToken(item.Text.Content.ToString());
-                    rootIndex = item.DependencyEdge.HeadTokenIndex;
-                    break;
-                }
+                custSent sent = new custSent(sentence.Text.Content.ToString());
+                sentenceList.Add(sent);
             }
-
-            foreach (var item in response.Tokens)
-            {
-                if (item.DependencyEdge.HeadTokenIndex == rootIndex)
-                {
-                    root.nouns.Add(item.Text.Content.ToString());
-                }
-            }
+            return sentenceList;
         }
     }
 }
