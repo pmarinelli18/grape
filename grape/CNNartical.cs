@@ -4,46 +4,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NewsAPI;
-using NewsAPI.Constants;
 using NewsAPI.Models;
+using NewsAPI.Constants;
+using RestSharp;
 
 namespace grape
 {
     class CNNartical
     {
 
-        ArticlesResult ar;
+        public List<articles> ar;
 
         public CNNartical()
         {
-            var newsApiClient = new NewsApiClient("df3a00e24d6f4d6e912a12f2ce9704a0");
-            var articlesResponse = newsApiClient.GetTopHeadlines(new TopHeadlinesRequest
-            {
-                Q = "Tech",
-                Language = Languages.EN
-            });
-            if (articlesResponse.Status == Statuses.Ok)
-            {
-                ar = articlesResponse;
-            }                      
+            var cliean = new RestClient("https://newsapi.org/v2/top-headlines?country=us&apiKey=e53db10bedcc4efa89fc6e3f0592b839");
 
+            var request = new RestRequest();
+            IRestResponse<results> response2 = cliean.Execute<results>(request);
+
+            ar = response2.Data.articles;
+            
         }
 
         public string[] getTitleList()
         {
-            string[] titles = new string[ar.Articles.Count];
+            string[] tiles = new string[ar.Count()];
 
-            for (int i = 0; i < titles.Count(); i++)
+            for (int i = 0; i < ar.Count(); i++)
             {
-                titles[i] = ar.Articles.ElementAt(i).Title;
+                tiles[i] = ar[i].title;
             }
 
-            return titles;
+            return tiles;
         }
-
-        public string getContent(int i)
-        {
-            return ar.Articles.ElementAt(i).Description;
-        }
+        //
+        //public string getContent(int i)
+        //{
+        //    
+        //}
     }
 }
