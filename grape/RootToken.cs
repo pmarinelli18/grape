@@ -8,7 +8,7 @@ using static Google.Cloud.Language.V1.AnnotateTextRequest.Types;
 
 namespace grape
 {
-    class RootToken
+    public class RootToken
     {
         public string root;
         public List<String> nouns;

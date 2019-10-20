@@ -144,6 +144,7 @@
   <ItemGroup>
     <Compile Include="BingImageSearch.cs" />
     <Compile Include="CNNartical.cs" />
+    <Compile Include="custSent.cs" />
     <Compile Include="edgeDepen.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
