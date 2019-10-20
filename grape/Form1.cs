@@ -34,6 +34,8 @@ namespace grape
         {
             int index = website.SelectedIndex;
             textOutput.Text = cn.ar[index].content;
+            edgeDepen eD = new edgeDepen(textOutput.Text);
+            //List<custSent>
 
         }
 
