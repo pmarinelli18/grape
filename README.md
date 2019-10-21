@@ -1,6 +1,11 @@
 
 ![Tom Brady News Demo](photos/Banner.png)
-Developers: Julian Berrio, Peyton Marinelli, Ahsan Rohan, BB Event: Hack FSU 2019 Date started: 10/18/2019 Date submitted: 10/20/2019
+DEVELOPERS: Julian Berrio, Peyton Marinelli, Ahsan Rohan, BB 
+EVENT: Hack FSU 2019 
+DATE STARTED: 10/18/2019 
+DATE SUBMITTED: 10/20/2019
+
+AWARDS:Best use of Google Cloud at Hack FSU 2019
 
 INTRODUCTION
 In modern day, its become increasingly difficult for some members of society to keep up with the ever-increasing density of news and information. This desktop application was designed to help inform individuals who find it difficult to read news articles like the elderly or people who dont speak the written language.
